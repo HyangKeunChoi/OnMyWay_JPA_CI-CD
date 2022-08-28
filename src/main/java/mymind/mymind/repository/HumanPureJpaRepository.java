@@ -8,7 +8,7 @@ import javax.persistence.EntityManager;
 
 @Repository
 @RequiredArgsConstructor
-public class HumanRepository {
+public class HumanPureJpaRepository {
 
     private final EntityManager entityManager;
 

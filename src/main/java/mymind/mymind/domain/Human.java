@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -18,6 +20,9 @@ public class Human extends BaseAbstractEntity {
     private int age;
 
     private String userName;
+
+    @OneToMany(mappedBy = "human")
+    private List<Company> appliedCompanys = new ArrayList<>();
 
     @Embedded
     AdditionalInfo additionalInfo;
