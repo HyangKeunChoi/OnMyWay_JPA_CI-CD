@@ -1,5 +1,11 @@
 # 내맘대로 JPA & CI/CD
 
+## Skills
++ Java11, SpringBoot, SpringDataJpa
++ Junit5, lombok
++ Gradle, intelliJ
+
+
 
 ## @RuntWith(Springnner.class)
 + JUnit 프레임워크의 테스트 실행방법을 확장할 때 사용하는 어노테이션

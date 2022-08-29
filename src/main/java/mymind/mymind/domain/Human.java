@@ -21,7 +21,7 @@ public class Human extends BaseAbstractEntity {
 
     private String userName;
 
-    @OneToMany(mappedBy = "human")
+    @OneToMany(mappedBy = "human", cascade = CascadeType.ALL)
     private List<Company> appliedCompanys = new ArrayList<>();
 
     @Embedded
