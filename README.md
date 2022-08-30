@@ -1,11 +1,19 @@
 # 내맘대로 JPA & CI/CD
 
-## Skills
+### 아키텍쳐
+
+![image](https://user-images.githubusercontent.com/49984996/187562494-7f5ed770-edf9-4f89-b743-faad28575000.png)
+
+
+### Skills
 + Java11, SpringBoot, SpringDataJpa
 + Junit5, lombok
 + Gradle, intelliJ
 
-
+### 비용 계산
++ S3 : 스토리지 GB당 0.025달러
++ EC2 : t2.small (vCPU : 1, 메모리 2GiB) ⇒ 약 월 20달러,데이터 전송 비용 별도
++ CodeDeploy : 온프레미스 서버에 코드를 배포할 때만 비용이 부과됨. 요금은 온프레미스 서버 업데이트당 0.02 달러
 
 ### @RuntWith(Springnner.class)
 + JUnit 프레임워크의 테스트 실행방법을 확장할 때 사용하는 어노테이션
