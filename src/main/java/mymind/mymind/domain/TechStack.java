@@ -10,7 +10,8 @@ import javax.persistence.*;
 @Setter
 public class TechStack {
 
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     @Column(name = "tech_stack_id")
     private Long id;
 
@@ -19,8 +20,4 @@ public class TechStack {
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "company_id")
     private Company company;
-
-    void addStack(TechStack techStack) {
-        this.company.getTechStacks().add(techStack);
-    }
 }

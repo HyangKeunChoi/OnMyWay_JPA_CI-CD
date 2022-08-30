@@ -26,4 +26,9 @@ public class Human extends BaseAbstractEntity {
 
     @Embedded
     AdditionalInfo additionalInfo;
+
+    public void apply(Company company) {
+        appliedCompanys.add(company);
+        company.setHuman(this);
+    }
 }

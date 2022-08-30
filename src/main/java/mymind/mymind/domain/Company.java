@@ -27,8 +27,8 @@ public class Company {
     private List<TechStack> techStacks = new ArrayList<>();
 
     // 연관관계 편의 메소드
-    public void setHuman(Human human) {
-        this.human = human;
-        human.getAppliedCompanys().add(this);
+    public void addStack(TechStack techStack) {
+        techStack.setCompany(this);
+        techStacks.add(techStack);
     }
 }
