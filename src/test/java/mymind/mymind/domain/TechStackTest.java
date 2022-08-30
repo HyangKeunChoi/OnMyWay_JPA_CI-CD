@@ -40,10 +40,7 @@ class TechStackTest {
         human.setUserName("최향근");
         human.setAge(30);
 
-        AdditionalInfo additionalInfo = new AdditionalInfo();
-        additionalInfo.setCareer("2.5");
-        additionalInfo.setGithubLink("hyangkeunchoi");
-
+        AdditionalInfo additionalInfo = new AdditionalInfo("2.5", "hyangkeunchoi");
         human.setAdditionalInfo(additionalInfo);
 
         Company company = new Company();
@@ -62,13 +59,13 @@ class TechStackTest {
         company.addStack(techStack1);
         company.addStack(techStack2);
 
-        companyDataJpaRepository.save(company);
+        Company savedCompany = companyDataJpaRepository.save(company);
 
         entityManager.flush();
         entityManager.clear();
 
         // when
-        Company findCompany = companyDataJpaRepository.findById(1L).get();
+        Company findCompany = companyDataJpaRepository.findById(savedCompany.getId()).get();
 
         for (int i = 0; i < findCompany.getTechStacks().size(); i++) {
             System.out.println(findCompany.getTechStacks().get(i).getTechName());

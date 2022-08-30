@@ -20,6 +20,4 @@ public class AdditionalInfo {
         this.career = career;
         this.githubLink = githubLink;
     }
-
-
 }
