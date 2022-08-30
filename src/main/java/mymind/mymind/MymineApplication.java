@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MymineApplication {
 
 	public static void main(String[] args) {
-		log.info("테스트 로그2");
+		log.info("테스트 로그3");
 		SpringApplication.run(MymineApplication.class, args);
 	}
 
