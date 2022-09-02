@@ -9,6 +9,7 @@
 + Java11, SpringBoot, SpringDataJpa
 + Junit5, lombok
 + Gradle, intelliJ
++ Github Action, AWS EC2, S3, CodeDeploy
 
 ### 비용 계산
 + S3 : 스토리지 GB당 0.025달러
